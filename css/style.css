@@ -27,7 +27,7 @@ header {
 /* --- Colonne gauche : logo + réseaux sociaux --- */
 .reseaux-sociaux {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     justify-self: start;
