@@ -6,11 +6,13 @@ body {
     background-color: #f9f9f9;
 }
 
+
+
 header {
     background-color: #6A0DAD; /* Violet foncé */
     color: white;
-    padding: 0.5em 0; /* ↓ réduit la hauteur */
-    text-align: center;
+    padding: 0.5em 20px;
+    text-align: left; /* Alignement à gauche */
     position: relative;
 }
 
@@ -21,7 +23,6 @@ header h1 {
 
 header figure {
     margin: 0;
-    display: inline-block;
     position: absolute;
     top: 10px;
     right: 30px;
@@ -39,6 +40,31 @@ header figcaption {
     color: white;
     width: 150px;
 }
+
+/* Texte sous le titre */
+header p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Bloc réseaux sociaux */
+.reseaux-sociaux {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.reseaux-sociaux a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.reseaux-sociaux a:hover {
+    color: #ddd;
+}
+
 
 nav {
     display: flex;
