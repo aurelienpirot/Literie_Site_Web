@@ -6,11 +6,11 @@ body {
     background-color: #f9f9f9;
 }
 
-/* ---------- HEADER (mis à jour) ---------- */
+/* ---------- HEADER ---------- */
 header {
     background-color: #6A0DAD; /* Violet foncé */
     color: white;
-    padding: 1em 20px;         /* Moins de padding = moins de hauteur */
+    padding: 2em 20px;
     position: relative;
 }
 
@@ -28,19 +28,19 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
     justify-self: start;
 }
 
 .header-image {
-    max-width: 80px;
+    max-width: 100px;
     height: auto;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .reseaux-sociaux a {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -48,7 +48,6 @@ header {
 .reseaux-sociaux a:hover {
     color: #ddd;
 }
-
 
 /* --- Colonne centre : texte --- */
 .header-titres {
@@ -60,13 +59,14 @@ header {
 
 .header-titres h1 {
     margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .header-titres p {
-    margin: 5px 0 0;
-    font-size: 1em;
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* --- Colonne droite : badge --- */
@@ -77,15 +77,15 @@ header figure {
 }
 
 header figure img {
-    height: 50px;
+    height: 60px;
     width: auto;
 }
 
 header figcaption {
-    font-size: 0.8em;
-    margin-top: 4px;
+    font-size: 0.9em;
+    margin-top: 5px;
     color: white;
-    width: 130px;
+    width: 150px;
 }
 
 /* ---------- NAVIGATION ---------- */
