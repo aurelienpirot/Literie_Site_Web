@@ -6,15 +6,15 @@ body {
     background-color: #f9f9f9;
 }
 
-/* ---------- HEADER (mis à jour) ---------- */
+/* ---------- HEADER ---------- */
 header {
     background-color: #6A0DAD; /* Violet foncé */
     color: white;
-    padding: 1em 20px;         /* Moins de padding = moins de hauteur */
+    padding: 1em 20px;
     position: relative;
 }
 
-/* Structure à 3 colonnes : gauche - centre - droite */
+/* Grille 3 colonnes : logo - texte - badge */
 .header-content {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -23,32 +23,39 @@ header {
     gap: 20px;
 }
 
-/* --- Colonne gauche : logo + réseaux sociaux --- */
+/* --- Colonne gauche : logo + réseaux --- */
 .reseaux-sociaux {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
     justify-self: start;
 }
 
 .header-image {
     max-width: 80px;
     height: auto;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
-.reseaux-sociaux a {
+/* Réseaux sociaux en ligne */
+.reseaux-icones {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.reseaux-icones a {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.reseaux-sociaux a:hover {
+.reseaux-icones a:hover {
     color: #ddd;
 }
-
 
 /* --- Colonne centre : texte --- */
 .header-titres {
@@ -107,10 +114,10 @@ nav a:hover {
     color: black;
 }
 
-/* ---------- CONTENU ---------- */
+/* ---------- CONTENEUR ---------- */
 .container {
     padding: 20px;
-    padding-bottom: 80px; /* Pour laisser de la place au footer fixe */
+    padding-bottom: 80px; /* Espace pour le footer fixe */
 }
 
 /* ---------- PRODUITS ---------- */
