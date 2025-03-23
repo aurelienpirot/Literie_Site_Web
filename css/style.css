@@ -23,7 +23,7 @@ header {
     color: white;
     padding: 1.5em 20px;
     position: relative;
-    min-height: 100px;
+    min-height: 50px;
 }
 
 .header-content {
