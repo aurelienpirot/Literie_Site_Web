@@ -10,7 +10,7 @@ body {
 header {
     background-color: #6A0DAD; /* Violet foncé */
     color: white;
-    padding: 1em 20px;
+    padding: 0.5em 15px; /* Réduction du padding vertical */
     position: relative;
 }
 
@@ -28,27 +28,27 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 6px;
     justify-self: start;
 }
 
 .header-image {
-    max-width: 80px;
+    max-width: 65px;
     height: auto;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 /* Réseaux sociaux en ligne */
 .reseaux-icones {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
 .reseaux-icones a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -67,7 +67,7 @@ header {
 
 .header-titres h1 {
     margin: 0;
-    font-size: 1.8em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
@@ -84,15 +84,15 @@ header figure {
 }
 
 header figure img {
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 
 header figcaption {
-    font-size: 0.8em;
-    margin-top: 4px;
+    font-size: 0.75em;
+    margin-top: 3px;
     color: white;
-    width: 130px;
+    width: 120px;
 }
 
 /* ---------- NAVIGATION ---------- */
