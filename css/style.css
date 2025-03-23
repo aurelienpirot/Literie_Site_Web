@@ -32,6 +32,7 @@ header {
     justify-self: start;
 }
 
+/* Logo à gauche */
 .header-image {
     max-width: 50px;
     height: auto;
@@ -78,8 +79,9 @@ header figure {
     justify-self: end;
 }
 
+/* Badge à droite */
 header figure img {
-    height: 50px;
+    height: 35px;
     width: auto;
 }
 
