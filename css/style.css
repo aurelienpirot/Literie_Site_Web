@@ -15,12 +15,7 @@ header {
     color: white;
     padding: 2em 20px;
     position: relative;
-    text-align: center;
     min-height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /* Titre centré */
@@ -37,12 +32,27 @@ header p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+/* Texte centré */
+.header-titres {
+    text-align: center;
+    flex: 1;
+}
+
+.header-titres h1 {
+    margin: 0;
+    font-size: 2.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header-titres p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 /* Badge à droite */
 header figure {
     margin: 0;
-    position: absolute;
-    top: 15px;
-    right: 30px;
     text-align: center;
 }
 
@@ -58,12 +68,19 @@ header figcaption {
     width: 150px;
 }
 
-/* Réseaux sociaux centrés sous le texte */
-.reseaux-sociaux {
-    margin-top: 15px;
+/* Layout horizontal avec centrage du contenu */
+.header-content {
     display: flex;
-    gap: 15px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Réseaux sociaux à gauche */
+.reseaux-sociaux {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .reseaux-sociaux a {
