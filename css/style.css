@@ -33,6 +33,11 @@ header {
     text-align: center;
     gap: 20px;
 }
+.header-image {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
 
 /* Réseaux sociaux à gauche */
 .reseaux-sociaux {
