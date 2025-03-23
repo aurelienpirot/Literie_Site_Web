@@ -21,9 +21,9 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    padding: 2em 20px;
+    padding: 1.5em 20px;
     position: relative;
-    min-height: 250px;
+    min-height: 160px;
 }
 
 .header-content {
