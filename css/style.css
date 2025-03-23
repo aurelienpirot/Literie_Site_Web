@@ -17,7 +17,7 @@ header::before {
 
 header {
     background-image: url("../images/literie-de-la-lys.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
