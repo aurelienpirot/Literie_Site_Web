@@ -6,35 +6,33 @@ body {
     background-color: #f9f9f9;
 }
 
-/* ---------- HEADER COMPACT ---------- */
+/* ---------- HEADER ---------- */
 header {
     background-color: #6A0DAD;
     color: white;
-    padding: 0.8em 20px;
-    position: relative;
+    padding: 1em 20px;
 }
 
-/* 3 colonnes : logo + réseaux | texte | badge */
+/* Conteneur horizontal à 3 zones : gauche, centre, droite */
 .header-content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-/* --- Gauche : logo + icônes réseaux --- */
+/* ----- Colonne gauche : logo + réseaux ----- */
 .reseaux-sociaux {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-self: start;
-    gap: 6px;
 }
 
 .header-image {
-    max-width: 60px;
+    max-width: 70px;
     height: auto;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .reseaux-icones {
@@ -44,7 +42,7 @@ header {
 
 .reseaux-icones a {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -53,15 +51,15 @@ header {
     color: #ddd;
 }
 
-/* --- Centre : titre et sous-titre --- */
+/* ----- Centre : titre principal ----- */
 .header-titres {
     text-align: center;
+    flex: 1;
 }
 
 .header-titres h1 {
     margin: 0;
     font-size: 1.6em;
-    line-height: 1.2;
 }
 
 .header-titres p {
@@ -69,23 +67,21 @@ header {
     font-size: 1em;
 }
 
-/* --- Droite : badge --- */
-header figure {
-    margin: 0;
+/* ----- Colonne droite : badge prix ----- */
+.badge-starter {
     text-align: center;
-    justify-self: end;
 }
 
-header figure img {
+.badge-starter img {
     height: 45px;
     width: auto;
 }
 
-header figcaption {
+.badge-starter figcaption {
     font-size: 0.75em;
     margin-top: 4px;
     color: white;
-    width: 120px;
+    width: 130px;
 }
 
 /* ---------- NAVIGATION ---------- */
@@ -107,10 +103,10 @@ nav a:hover {
     color: black;
 }
 
-/* ---------- CONTENU ---------- */
+/* ---------- CONTENEUR PRINCIPAL ---------- */
 .container {
     padding: 20px;
-    padding-bottom: 80px; /* Pour le footer fixe */
+    padding-bottom: 80px; /* espace pour le footer */
 }
 
 /* ---------- PRODUITS ---------- */
