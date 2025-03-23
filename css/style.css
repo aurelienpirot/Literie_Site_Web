@@ -8,7 +8,7 @@ body {
 
 /* ---------- HEADER (mis à jour) ---------- */
 header {
-    background-color: #6A0DAD !important;
+    background-color: #6A0DAD; /* Violet foncé */
     color: white;
     padding: 1em 20px;         /* Moins de padding = moins de hauteur */
     position: relative;
@@ -32,9 +32,8 @@ header {
     justify-self: start;
 }
 
-/* Logo à gauche */
 .header-image {
-    max-width: 50px;
+    max-width: 80px;
     height: auto;
     margin-bottom: 6px;
 }
@@ -72,16 +71,13 @@ header {
 
 /* --- Colonne droite : badge --- */
 header figure {
-    height: 35px; /* ↓ plus petit */
-    width: auto;
     margin: 0;
     text-align: center;
     justify-self: end;
 }
 
-/* Badge à droite */
 header figure img {
-    height: 35px;
+    height: 50px;
     width: auto;
 }
 
