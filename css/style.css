@@ -7,9 +7,19 @@ body {
 }
 
 /* ---------- HEADER ---------- */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
 header {
+    background-image: url("../images/literie-de-la-lys.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 2em 20px;
     position: relative;
