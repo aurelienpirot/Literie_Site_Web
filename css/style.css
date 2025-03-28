@@ -138,7 +138,7 @@ nav a:hover {
     top: 120px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 95%;
     max-width: 600px;
     height: auto;
     border-radius: 10px;
@@ -177,9 +177,12 @@ nav a:hover {
 }
 
 .carousel img {
-    width: 100%;
+    width: 80%;               /* Réduit la largeur de l’image */
+    max-width: 400px;         /* Fixe une largeur max (ex : 400px) */
+    height: auto;             /* Pour garder les proportions */
     display: none;
     border-radius: 8px;
+    margin: 0 auto;           /* Centre l’image dans le carrousel */
 }
 
 .carousel img.active {
