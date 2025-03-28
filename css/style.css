@@ -117,7 +117,7 @@ nav a:hover {
 
 /* ---------- CONTENU ---------- */
 .container {
-    min-height: calc(100vh - 60px - 260px); /* 60px footer + ~140px header/nav */
+    min-height: calc(100vh - 60px - 400px); /* 60px footer + ~140px header/nav */
     display: flex;
     justify-content: center;
     align-items: center;
