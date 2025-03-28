@@ -170,7 +170,7 @@ nav a:hover {
 .carousel {
     width: 100%;
     max-width: 600px;
-    height: 600px;            /* fixe la hauteur du carrousel */
+    height: 500px;            /* fixe la hauteur du carrousel */
     margin: auto;
     overflow: hidden;
     position: relative;
