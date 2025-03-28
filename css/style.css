@@ -124,7 +124,7 @@ nav a:hover {
 
 .container-produits {
     position: absolute;           /* permet le positionnement libre */
-    top: 200px;                   /* distance depuis le haut de la page (axe Y) */
+    top: 160px;                   /* distance depuis le haut de la page (axe Y) */
     left: 50%;                    /* centre horizontalement */
     transform: translateX(-50%); /* recentre pour que le centre soit au milieu */
     width: 100%;
