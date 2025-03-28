@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literie de la Lys - Comines</title>
-    <meta name="description" content="Magasin de literie à Comines-Warneton. Matelas, sommiers, conseils personnalisés. Livraison possible.">
-    <!-- Ton CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Icônes Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Literie de la Lys - Comines</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header-container"></div>
+  <div id="header-container"></div>
 
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="produits.html">Produits</a>
-        <a href="#">À Propos</a>
-        <a href="#">Contact</a>
-    </nav>
-
+  <main class="main-content">
     <div class="container">
-        <p></p>
-        <img src="images/magasin.jpg" alt="Présentation du magasin Literie de la Lys" class="presentation-magasin">
+      <img src="images/magasin.jpg" alt="Présentation du magasin Literie de la Lys" class="presentation-magasin">
     </div>
+  </main>
 
-    <div id="footer-container"></div>
+  <div id="footer-container"></div>
 
-    <script>
-        async function includeHTML(elementId, filePath) {
-            const response = await fetch(filePath);
-            const html = await response.text();
-            document.getElementById(elementId).innerHTML = html;
-        }
-    
-        async function init() {
-            await includeHTML('header-container', 'header.html');
-            await includeHTML('footer-container', 'footer.html');
-    
-            // Forcer un recalcul après chargement complet
-            const container = document.querySelector('.container');
-            container.style.minHeight = window.innerHeight + 'px';
-        }
-    
-        init();
-    </script>
+  <script>
+    async function includeHTML(id, file) {
+      const response = await fetch(file);
+      const html = await response.text();
+      document.getElementById(id).innerHTML = html;
+    }
+
+    async function init() {
+      await includeHTML('header-container', 'header.html');
+      await includeHTML('footer-container', 'footer.html');
+    }
+
+    init();
+  </script>
 </body>
 </html>
