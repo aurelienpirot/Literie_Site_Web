@@ -117,14 +117,9 @@ nav a:hover {
 
 /* ---------- CONTENU ---------- */
 .container-index {
-    min-height: calc(100vh - 60px - 1000px); /* 60px footer + ~140px header/nav */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-top: 140px; /* décaler sous le header + nav */
+    position: relative;
+    height: 100vh; /* ou une hauteur fixe */
+    overflow: hidden; /* empêche le débordement si besoin */
 }
 
 .container-produits {
@@ -139,11 +134,13 @@ nav a:hover {
 }
 
 .presentation-magasin {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 90%;
     max-width: 600px;
     height: auto;
-    display: block;
-    margin: 20px auto; /* un peu d’espace autour */
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
