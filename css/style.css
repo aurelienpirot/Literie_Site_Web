@@ -135,7 +135,7 @@ nav a:hover {
 
 .presentation-magasin {
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
@@ -170,7 +170,7 @@ nav a:hover {
 .carousel {
     width: 100%;
     max-width: 600px;
-    height: 400px;            /* fixe la hauteur du carrousel */
+    height: 600px;            /* fixe la hauteur du carrousel */
     margin: auto;
     overflow: hidden;
     position: relative;
