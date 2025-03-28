@@ -123,19 +123,19 @@ nav a:hover {
 }
 
 .container-produits {
-    min-height: calc(100vh - 60px - 800px); /* 60px footer + ~140px header/nav */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
+    position: absolute;           /* permet le positionnement libre */
+    top: 200px;                   /* distance depuis le haut de la page (axe Y) */
+    left: 50%;                    /* centre horizontalement */
+    transform: translateX(-50%); /* recentre pour que le centre soit au milieu */
+    width: 100%;
+    max-width: 800px;
     padding: 20px;
-    margin-top: 140px; /* décaler sous le header + nav */
+    box-sizing: border-box;
 }
 
 .presentation-magasin {
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
