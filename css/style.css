@@ -112,8 +112,14 @@ nav a:hover {
 
 /* ---------- CONTENU ---------- */
 .container {
+    display: flex;
+    justify-content: center;     /* centre horizontalement */
+    align-items: center;         /* centre verticalement */
+    min-height: calc(100vh - 160px); /* prend presque toute la hauteur, ajustable */
     padding: 20px;
-    padding-bottom: 80px; /* Pour laisser de la place au footer fixe */
+    padding-bottom: 80px;        /* espace pour le footer */
+    box-sizing: border-box;
+    flex-direction: column;      /* pour que le contenu reste en colonne */
 }
 
 .presentation-magasin {
