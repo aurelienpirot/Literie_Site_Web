@@ -168,21 +168,21 @@ nav a:hover {
 
 /* ---------- CARROUSEL ---------- */
 .carousel {
-    position: relative;
     width: 100%;
     max-width: 600px;
+    height: 400px;            /* fixe la hauteur du carrousel */
     margin: auto;
     overflow: hidden;
+    position: relative;
     border-radius: 8px;
 }
 
 .carousel img {
-    width: 80%;               /* Réduit la largeur de l’image */
-    max-width: 400px;         /* Fixe une largeur max (ex : 400px) */
-    height: auto;             /* Pour garder les proportions */
+    width: 100%;              /* prend toute la largeur du conteneur */
+    height: 100%;             /* prend toute la hauteur */
+    object-fit: cover;        /* rogne pour remplir sans déformer */
     display: none;
     border-radius: 8px;
-    margin: 0 auto;           /* Centre l’image dans le carrousel */
 }
 
 .carousel img.active {
