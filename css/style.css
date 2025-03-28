@@ -117,13 +117,11 @@ nav a:hover {
 
 /* ---------- CONTENU ---------- */
 .container {
-    min-height: calc(100vh - 60px); /* ou la hauteur exacte de ton footer */
+    flex: 1; /* prend tout l'espace disponible entre header et footer */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
 }
 
 .presentation-magasin {
