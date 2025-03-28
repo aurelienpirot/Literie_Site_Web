@@ -33,9 +33,17 @@
             const html = await response.text();
             document.getElementById(elementId).innerHTML = html;
         }
-
-        includeHTML('header-container', 'header.html');
-        includeHTML('footer-container', 'footer.html');
+    
+        async function init() {
+            await includeHTML('header-container', 'header.html');
+            await includeHTML('footer-container', 'footer.html');
+    
+            // Forcer un recalcul après chargement complet
+            const container = document.querySelector('.container');
+            container.style.minHeight = window.innerHeight + 'px';
+        }
+    
+        init();
     </script>
 </body>
 </html>
