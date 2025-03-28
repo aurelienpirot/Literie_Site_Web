@@ -116,7 +116,18 @@ nav a:hover {
 }
 
 /* ---------- CONTENU ---------- */
-.container {
+.container-index {
+    min-height: calc(100vh - 60px - 600px); /* 60px footer + ~140px header/nav */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 140px; /* décaler sous le header + nav */
+}
+
+.container-produits {
     min-height: calc(100vh - 60px - 600px); /* 60px footer + ~140px header/nav */
     display: flex;
     justify-content: center;
