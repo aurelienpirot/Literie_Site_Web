@@ -147,7 +147,7 @@ nav a:hover {
 
 .presentation-magasin-texte {
     position: absolute;
-    top: 800px;
+    top: 750px;
     left: 50%;
     transform: translateX(-50%);
     width: 95%;
